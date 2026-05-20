@@ -7,6 +7,9 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 import { InferenceDashboard } from "@/components/ui/inference-dashboard";
 
+import profileImg from "../../../public/images/profile.png";
+import awsCertImg from "../../../public/images/aws-certified-machine-learning-engineer-associate.png";
+
 const stats = [
   { label: "Years Experience", value: "5+" },
   { label: "LLM Pipelines", value: "50+" },
@@ -30,7 +33,7 @@ export function About() {
             <div className="space-y-6">
               <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow">
                 <Image
-                  src="/images/profile.png"
+                  src={profileImg}
                   alt="Sumukh Ramagiri"
                   width={600}
                   height={600}
@@ -94,9 +97,11 @@ export function About() {
                 <p className="mb-3 font-mono text-xs uppercase tracking-widest text-muted-foreground">Certifications</p>
                 <div className="flex flex-wrap gap-3">
                   <div className="flex items-center gap-3 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm px-4 py-3 transition-all hover:border-primary/30 hover:neon-glow">
-                    <img
-                      src="/images/aws-certified-machine-learning-engineer-associate.png"
+                    <Image
+                      src={awsCertImg}
                       alt="AWS Certified Machine Learning Engineer – Associate"
+                      width={48}
+                      height={48}
                       className="h-12 w-12 object-contain"
                     />
                     <div>
