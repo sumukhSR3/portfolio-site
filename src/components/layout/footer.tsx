@@ -68,14 +68,6 @@ export function Footer() {
           <p className="font-mono text-[11px] text-muted-foreground">
             © {year} Sumukh Ramagiri. All rights reserved.
           </p>
-          <p className="font-mono text-[11px] text-muted-foreground">
-            Built with{" "}
-            <span className="text-emerald-400">Next.js</span>
-            {" · "}
-            <span className="text-blue-400">TypeScript</span>
-            {" · "}
-            <span className="text-violet-400">Framer Motion</span>
-          </p>
         </div>
       </div>
     </footer>
